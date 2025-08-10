@@ -1,0 +1,25 @@
+# Gradle / Java
+/.gradle/
+build/
+out/
+.gradle/
+
+# IntelliJ
+/.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs, classes
+*.log
+*.class
+
+# Wrapper (если не хочешь коммитить jar)
+gradle/wrapper/gradle-wrapper.jar
+
+# IDEA run configs, local properties, credentials
+/local.properties
+gradle.properties
+*.keystore
