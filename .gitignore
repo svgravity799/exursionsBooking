@@ -4,22 +4,23 @@ build/
 out/
 .gradle/
 
-# IntelliJ
+# IntelliJ IDEA
 /.idea/
 *.iml
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-# Logs, classes
+# Logs, compiled classes
 *.log
 *.class
 
-# Wrapper (если не хочешь коммитить jar)
-gradle/wrapper/gradle-wrapper.jar
-
-# IDEA run configs, local properties, credentials
+# Ignore local config / secrets
 /local.properties
 gradle.properties
 *.keystore
+
+# Mac temp files
+*.swp
+*~

@@ -1,29 +1,20 @@
-import com.codeborne.selenide.*;
-import org.junit.jupiter.api.DisplayName;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.open;
 
-import java.nio.channels.ConnectionPendingException;
-import java.time.Duration;
-import io.qameta.allure.*;
+public class ExcursionsBookingTest {
 
-
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
-
-
-public class
-exursionsBooking {
     @Test
+    void excursionsBooking() {
+        // Настройки Selenide для CI
+        Configuration.browser = "chrome";
+        Configuration.headless = true;
+        Configuration.browserSize = "1920x1080";
+        Configuration.timeout = 10000; // 10 секунд ожидания
 
-    void exursionsBooking () {
-        Selenide.open("https://fstravel.com/excursions/");
+       Selenide.open("https://fstravel.com/excursions/");
         System.out.println("Страница открыта");
-
     }
-
 }
