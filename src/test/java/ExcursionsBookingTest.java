@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class ExcursionsBookingTest {
 
     @Test
-    void excursionsBooking() {
+    void ExcursionsBookingTest() {
         // Настройки Selenide для CI
         Configuration.browser = "chrome";
         Configuration.headless = true;
